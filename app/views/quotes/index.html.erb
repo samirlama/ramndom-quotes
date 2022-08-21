@@ -1,2 +1,6 @@
-<h1>Welcome to the world of quotes.</h1>
-<p><%= link_to 'Random Quote', quote_quotes_path %></p>
+<div class="container-fluid mt-4">
+  <h1>Welcome to the world of quotes.</h1>
+  <button type="button" class="btn btn-info"><%= link_to 'Random Quote(HTML)', quote_quotes_path %></button>
+  <button type="button" class="btn btn-info"><%= link_to 'Random Quote(JSON)', quote_quotes_path(format: :json) %></button>
+  <button type="button" class="btn btn-info"><%= link_to 'Random Quote(XML)', quote_quotes_path(format: :xml) %></button>
+</div>
