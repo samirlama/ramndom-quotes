@@ -20,6 +20,6 @@ class CsvParser
       hash_data << { title: title, author: author }
     end
 
-    hash_data
+    hash_data.as_json
   end
 end
